@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#100d24">
+  <title>A Celebration for Mom ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+
+  <section class="welcome" id="welcome">
+    <div class="welcome-stars">✦　✧　✦</div>
+    <p class="eyebrow">A LITTLE SURPRISE, MADE WITH LOVE</p>
+    <h1>Today, we Celebrate 🎇🎉<em>You Mom.</em>We Love You Mom</h1>
+    <p class="welcome-copy">A special moment for a truly special person. There's love, memories and a little surprise waiting inside.</p>
+    <button class="gold-button" id="openBtn">Click Here to Open Your Surprise, Mom <span>♡</span></button>
+    <p class="tap-note">TAP TO BEGIN THE CELEBRATION</p>
+  </section>
+
+  <div class="site hidden" id="site">
+    <header class="topbar">
+      <a class="brand" href="#home" data-page-link="home">✦ MADE WITH LOVE</a>
+      <button class="music-toggle" id="musicToggle" aria-label="Toggle music"><b>♫</b> <span id="musicLabel">Play song</span></button>
+    </header>
+    <nav class="menu-bar" aria-label="Main menu">
+      <button class="menu-link active" data-page-link="home">Home</button>
+      <button class="menu-link" data-page-link="message">Message</button>
+      <button class="menu-link" data-page-link="memories">Memories</button>
+      <button class="menu-link" data-page-link="film">Video</button>
+      <button class="menu-link" data-page-link="song">Music</button>
+    </nav>
+
+    <main class="page-stage" id="home">
+      <section class="page hero active" data-page="home">
+        <div class="hero-copy">
+          <p class="eyebrow">A MOMENT TO REMEMBER</p>
+          <h1>Congratulations,<br><em>Mom!</em></h1>
+          <p class="lead">Today is all about celebrating you — your strength, your kindness, your love, and everything that makes you amazing.</p>
+          <button class="gold-button" data-go-page="memories">Explore your memories <span>→</span></button>
+        </div>
+        <div class="hero-photo-wrap" id="tilt">
+          <div class="photo-glow"></div>
+          <img class="hero-photo" src="mom.jpg" alt="A special photograph of Mom">
+          <span class="photo-caption">OUR STAR ✨</span>
+          <button class="gold-button magic-button" id="fireworksBtn">Click Here to Make a Little Magic ✨</button>
+        </div>
+      </section>
+
+      <section class="page dedication" data-page="message">
+        <p class="eyebrow">A MESSAGE FROM THE HEART</p>
+        <h2>For someone <em>irreplaceable.</em></h2>
+        <p class="msg" id="msg">Some people make life brighter simply by being in it. You are one of those people. May this achievement bring you joy, open beautiful new doors, and remind you how deeply you are appreciated. Keep shining, Mom. You deserve every good thing coming your way.</p>
+        <div class="heart">♥</div>
+      </section>
+
+      <section class="page memories" data-page="memories">
+        <div class="section-heading">
+          <p class="eyebrow">LITTLE MOMENTS, BIG MEMORIES</p>
+          <h2>A gallery of <em>you.</em></h2>
+          <p>Every picture tells a story worth keeping.</p>
+        </div>
+        <div class="gallery">
+          <button class="gallery-item tall" data-full="mom1.jpg"><img src="mom1.jpg" alt="Mom memory 1"><span>♡</span></button>
+          <button class="gallery-item" data-full="mom2.jpg"><img src="mom2.jpg" alt="Mom memory 2"><span>♡</span></button>
+          <button class="gallery-item" data-full="mom3.jpg"><img src="mom3.jpg" alt="Mom memory 3"><span>♡</span></button>
+          <button class="gallery-item wide" data-full="mom4.jpg"><img src="mom4.jpg" alt="Mom memory 4"><span>♡</span></button>
+          
+          
+          <button class="gallery-item wide" data-full="mom5.jpg"><img src="mom5.jpg" alt="Mom memory 4"><span>♡</span></button>
+          <button class="gallery-item wide" data-full="mom6.jpg"><img src="mom6.jpg" alt="Mom memory 4"><span>♡</span></button>
+          <button class="gallery-item wide" data-full="mom7.jpg"><img src="mom7.jpg" alt="Mom memory 4"><span>♡</span></button>
+          <button class="gallery-item wide" data-full="mom8.jpg"><img src="mom8.jpg" alt="Mom memory 4"><span>♡</span></button>
+          <button class="gallery-item wide" data-full="mom9.jpg"><img src="mom9.jpg" alt="Mom memory 4"><span>♡</span></button>
+          <button class="gallery-item wide" data-full="mom10.jpg"><img src="mom10.jpg" alt="Mom memory 4"><span>♡</span></button>
+          <button class="gallery-item wide" data-full="mom11.jpg"><img src="mom11.jpg" alt="Mom memory 4"><span>♡</span></button>
+          <button class="gallery-item wide" data-full="mom12.jpg"><img src="mom12.jpg" alt="Mom memory 4"><span>♡</span></button>
+          <button class="gallery-item wide" data-full="mom13.jpg"><img src="mom13.jpg" alt="Mom memory 4"><span>♡</span></button>
+          <button class="gallery-item wide" data-full="mom14.jpg"><img src="mom14.jpg" alt="Mom memory 4"><span>♡</span></button>
+          <button class="gallery-item wide" data-full="mom15.jpg"><img src="mom15.jpg" alt="Mom memory 4"><span>♡</span></button>
+          <button class="gallery-item wide" data-full="mom16.jpg"><img src="mom16.jpg" alt="Mom memory 4"><span>♡</span></button>
+          </div>
+      </section>
+
+      <section class="page film" data-page="film">
+        <p class="eyebrow">A MEMORY IN MOTION</p>
+        <h2>Press play. <em>Relive the moment.</em></h2>
+        <div class="video-frame">
+          <video id="memoryVideo" controls playsinline preload="metadata" poster="mom.jpg">
+            <source src="mom.mp4" type="video/mp4">
+            Your browser does not support video playback.
+          </video>
+        </div>
+      </section>
+
+      <section class="page song-section" data-page="song">
+        <div class="vinyl"><div class="vinyl-center">♥</div></div>
+        <p class="eyebrow">A SONG JUST FOR THIS MOMENT</p>
+        <h2>Let the music <em>play.</em></h2>
+        <p class="song-title">Your Celebration Song</p>
+        <div class="eq" id="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="player">
+          <button id="playBtn" class="play-button" aria-label="Play song">▶</button>
+          <div class="track"><div class="track-meta"><span id="songStatus">Ready to play</span><span id="songTime">0:00</span></div><input id="seekBar" type="range" min="0" max="100" value="0" aria-label="Seek song"></div>
+        </div>
+        <audio id="song" preload="auto"><source src="congratulations.mp3" type="audio/mpeg"></audio>
+        <p class="music-hint">Music will try to start when the celebration opens. If your browser blocks it, tap anywhere or use the music button.</p>
+      </section>
+    </main>
+    <footer>MADE WITH LOVE · A CELEBRATION TO REMEMBER</footer>
+  </div>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-btn" id="closeLightbox" aria-label="Close photo">×</button>
+    <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous photo">‹</button>
+    <img id="lightboxImage" src="" alt="Expanded memory">
+    <button class="lb-btn lb-next" id="lbNext" aria-label="Next photo">›</button>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
